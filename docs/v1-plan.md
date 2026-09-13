@@ -1,6 +1,6 @@
 # Moldova Customs V1 — product plan
 
-Source of truth for V1 scope, domain rules, and build slices. Agent working rules (when added) live in [AGENTS.md](../AGENTS.md); this file is the product plan.
+Source of truth for V1 scope, domain rules, and build slices. Agent working rules (when added) live in [AGENTS.md](../AGENTS.md). Scanned-paper / AI import is [v2-plan.md](v2-plan.md) — same DocTypes, later.
 
 ## Goal
 

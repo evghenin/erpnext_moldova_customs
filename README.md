@@ -2,7 +2,8 @@
 
 Moldova customs declarations integration for ERPNext
 
-V1 product plan (scope, SAD rules, reconciliation, posting): [docs/v1-plan.md](docs/v1-plan.md)
+- V1 product plan (signed SAD PDF, reconciliation, posting): [docs/v1-plan.md](docs/v1-plan.md)
+- V2 product plan (scanned paper + AI, same hub): [docs/v2-plan.md](docs/v2-plan.md)
 
 ### Installation
 
