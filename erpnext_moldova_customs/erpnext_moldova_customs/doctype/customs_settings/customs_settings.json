@@ -1,0 +1,58 @@
+{
+ "actions": [],
+ "creation": "2026-09-13 23:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "company_idno_field",
+  "company_settings"
+ ],
+ "fields": [
+  {
+   "default": "tax_id",
+   "description": "Company field that stores the importer IDNO",
+   "fieldname": "company_idno_field",
+   "fieldtype": "Data",
+   "label": "Company IDNO Field"
+  },
+  {
+   "fieldname": "company_settings",
+   "fieldtype": "Table",
+   "label": "Company Settings",
+   "options": "Customs Company Setting"
+  }
+ ],
+ "issingle": 1,
+ "links": [],
+ "modified": "2026-09-13 23:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "ERPNext Moldova Customs",
+ "name": "Customs Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "Accounts Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

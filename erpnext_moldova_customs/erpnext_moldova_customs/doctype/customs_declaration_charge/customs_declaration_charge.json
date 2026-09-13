@@ -1,0 +1,87 @@
+{
+ "actions": [],
+ "creation": "2026-09-13 23:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "cd_item_no",
+  "cd_tax_type",
+  "charge_type",
+  "cd_rate",
+  "cd_tax_base",
+  "cd_amount",
+  "default_posting",
+  "recon_status"
+ ],
+ "fields": [
+  {
+   "columns": 1,
+   "fieldname": "cd_item_no",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Item No"
+  },
+  {
+   "columns": 1,
+   "fieldname": "cd_tax_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "SAD Type"
+  },
+  {
+   "columns": 1,
+   "fieldname": "charge_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Charge Type",
+   "options": "\nduty\nvat\nother"
+  },
+  {
+   "fieldname": "cd_rate",
+   "fieldtype": "Percent",
+   "label": "Rate"
+  },
+  {
+   "fieldname": "cd_tax_base",
+   "fieldtype": "Currency",
+   "label": "Tax Base",
+   "options": "Company:company:default_currency"
+  },
+  {
+   "columns": 1,
+   "fieldname": "cd_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Amount",
+   "options": "Company:company:default_currency"
+  },
+  {
+   "columns": 1,
+   "fieldname": "default_posting",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Default Posting",
+   "options": "lcv\njournal_entry\nalready_on_pi"
+  },
+  {
+   "default": "Unallocated",
+   "fieldname": "recon_status",
+   "fieldtype": "Select",
+   "label": "Recon",
+   "options": "Unallocated\nPartial\nReconciled",
+   "read_only": 1
+  }
+ ],
+ "istable": 1,
+ "links": [],
+ "modified": "2026-09-13 23:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "ERPNext Moldova Customs",
+ "name": "Customs Declaration Charge",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

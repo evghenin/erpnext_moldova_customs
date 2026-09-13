@@ -8,7 +8,7 @@ app_license = "mit"
 # Apps
 # ------------------
 
-# required_apps = []
+required_apps = ["erpnext"]
 
 # Each item in the list will be shown as an app in the apps page
 # add_to_apps_screen = [
@@ -25,8 +25,8 @@ app_license = "mit"
 # ------------------
 
 # include js, css files in header of desk.html
-# app_include_css = "/assets/erpnext_moldova_customs/css/erpnext_moldova_customs.css"
-# app_include_js = "/assets/erpnext_moldova_customs/js/erpnext_moldova_customs.js"
+app_include_css = ["/assets/erpnext_moldova_customs/css/customs_declaration.css"]
+app_include_js = ["/assets/erpnext_moldova_customs/js/customs_declaration_import.js"]
 
 # include js, css files in header of web template
 # web_include_css = "/assets/erpnext_moldova_customs/css/erpnext_moldova_customs.css"

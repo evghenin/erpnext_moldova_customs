@@ -1,0 +1,114 @@
+{
+ "actions": [],
+ "creation": "2026-09-13 23:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "cd_item_no",
+  "cd_hs_code",
+  "cd_origin",
+  "cd_description",
+  "cd_qty",
+  "cd_net_mass",
+  "cd_gross_mass",
+  "cd_value",
+  "cd_stat_value",
+  "cd_duty_rate",
+  "cd_duty_amount",
+  "goods_recon_status"
+ ],
+ "fields": [
+  {
+   "columns": 1,
+   "fieldname": "cd_item_no",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Item No"
+  },
+  {
+   "columns": 2,
+   "fieldname": "cd_hs_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "HS Code"
+  },
+  {
+   "fieldname": "cd_origin",
+   "fieldtype": "Data",
+   "label": "Country of Origin"
+  },
+  {
+   "columns": 2,
+   "fieldname": "cd_description",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Description"
+  },
+  {
+   "fieldname": "cd_qty",
+   "fieldtype": "Float",
+   "label": "Qty"
+  },
+  {
+   "fieldname": "cd_net_mass",
+   "fieldtype": "Float",
+   "label": "Net Mass (kg)"
+  },
+  {
+   "fieldname": "cd_gross_mass",
+   "fieldtype": "Float",
+   "label": "Gross Mass (kg)"
+  },
+  {
+   "fieldname": "cd_value",
+   "fieldtype": "Currency",
+   "label": "Item Price (Box 42)",
+   "options": "Company:company:default_currency"
+  },
+  {
+   "columns": 1,
+   "fieldname": "cd_stat_value",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Statistical Value (Box 46)",
+   "options": "Company:company:default_currency"
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "cd_duty_rate",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "Duty Rate (020)"
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "cd_duty_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Duty Amount (020)",
+   "options": "Company:company:default_currency"
+  },
+  {
+   "default": "Unallocated",
+   "fieldname": "goods_recon_status",
+   "fieldtype": "Select",
+   "label": "Goods Recon",
+   "options": "Unallocated\nPartial\nReconciled",
+   "read_only": 1
+  }
+ ],
+ "istable": 1,
+ "links": [],
+ "modified": "2026-09-13 23:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "ERPNext Moldova Customs",
+ "name": "Customs Declaration Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,511 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "autoname": "naming_series:",
+ "creation": "2026-09-13 23:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "company",
+  "cd_date",
+  "column_main",
+  "import_source",
+  "declaration_type",
+  "regime",
+  "identity_section",
+  "cd_office",
+  "cd_declarant",
+  "column_id",
+  "cd_year",
+  "cd_number",
+  "registration_section",
+  "cd_registration",
+  "cd_registration_date",
+  "column_reg",
+  "cd_assessment",
+  "cd_assessment_date",
+  "parties_section",
+  "cd_importer_idno",
+  "cd_importer_name",
+  "column_party",
+  "cd_exporter_name",
+  "cd_procedure",
+  "currency_section",
+  "cd_currency",
+  "cd_conversion_rate",
+  "column_cur",
+  "cd_invoice_amount",
+  "original_section",
+  "original_file",
+  "file_hash",
+  "column_orig",
+  "signature_status",
+  "signature_section",
+  "signature_integrity",
+  "signature_format",
+  "signature_field",
+  "column_break_sig",
+  "signature_declared_time",
+  "signature_coverage",
+  "signature_checked_on",
+  "column_break_sig2",
+  "signature_certificate_trust",
+  "signature_revocation",
+  "signature_timestamp_check",
+  "signature_checked_by",
+  "signature_evidence",
+  "identity_key",
+  "items_section",
+  "items",
+  "charges_section",
+  "charges",
+  "totals_section",
+  "cd_stat_value_total",
+  "cd_duty_total",
+  "column_tot",
+  "cd_vat_total",
+  "cd_fees_total",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "default": "CD-.YYYY.-",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "CD-.YYYY.-",
+   "reqd": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "cd_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Declaration Date"
+  },
+  {
+   "fieldname": "column_main",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "manual",
+   "fieldname": "import_source",
+   "fieldtype": "Select",
+   "label": "Import Source",
+   "options": "manual\nsigned_pdf\nscanned_paper"
+  },
+  {
+   "default": "H1",
+   "fieldname": "declaration_type",
+   "fieldtype": "Data",
+   "label": "Declaration Type"
+  },
+  {
+   "default": "IM A",
+   "fieldname": "regime",
+   "fieldtype": "Data",
+   "label": "Regime"
+  },
+  {
+   "fieldname": "identity_section",
+   "fieldtype": "Section Break",
+   "label": "ASYCUDA Identity"
+  },
+  {
+   "description": "Customs office code, e.g. MD208000",
+   "fieldname": "cd_office",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Office",
+   "reqd": 1
+  },
+  {
+   "description": "Declarant code, e.g. BRK21869",
+   "fieldname": "cd_declarant",
+   "fieldtype": "Data",
+   "label": "Declarant",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_id",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cd_year",
+   "fieldtype": "Data",
+   "label": "Year",
+   "reqd": 1
+  },
+  {
+   "description": "Declaration number, e.g. BRK2186900262",
+   "fieldname": "cd_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Declaration No",
+   "reqd": 1
+  },
+  {
+   "fieldname": "registration_section",
+   "fieldtype": "Section Break",
+   "label": "Registration / Assessment"
+  },
+  {
+   "fieldname": "cd_registration",
+   "fieldtype": "Data",
+   "label": "Registration (R)"
+  },
+  {
+   "fieldname": "cd_registration_date",
+   "fieldtype": "Date",
+   "label": "Registration Date"
+  },
+  {
+   "fieldname": "column_reg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cd_assessment",
+   "fieldtype": "Data",
+   "label": "Assessment (V)"
+  },
+  {
+   "fieldname": "cd_assessment_date",
+   "fieldtype": "Date",
+   "label": "Assessment Date"
+  },
+  {
+   "fieldname": "parties_section",
+   "fieldtype": "Section Break",
+   "label": "Parties"
+  },
+  {
+   "fieldname": "cd_importer_idno",
+   "fieldtype": "Data",
+   "label": "Importer IDNO"
+  },
+  {
+   "fieldname": "cd_importer_name",
+   "fieldtype": "Data",
+   "label": "Importer Name"
+  },
+  {
+   "fieldname": "column_party",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cd_exporter_name",
+   "fieldtype": "Data",
+   "label": "Exporter Name"
+  },
+  {
+   "fieldname": "cd_procedure",
+   "fieldtype": "Data",
+   "label": "Procedure"
+  },
+  {
+   "fieldname": "currency_section",
+   "fieldtype": "Section Break",
+   "label": "Invoice (Box 22)"
+  },
+  {
+   "fieldname": "cd_currency",
+   "fieldtype": "Link",
+   "label": "Invoice Currency",
+   "options": "Currency"
+  },
+  {
+   "default": "1",
+   "fieldname": "cd_conversion_rate",
+   "fieldtype": "Float",
+   "label": "Exchange Rate",
+   "precision": "6"
+  },
+  {
+   "fieldname": "column_cur",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cd_invoice_amount",
+   "fieldtype": "Currency",
+   "label": "Invoice Amount",
+   "options": "cd_currency"
+  },
+  {
+   "fieldname": "original_section",
+   "fieldtype": "Section Break",
+   "label": "Original Document"
+  },
+  {
+   "fieldname": "original_file",
+   "fieldtype": "Attach",
+   "label": "Original File"
+  },
+  {
+   "fieldname": "file_hash",
+   "fieldtype": "Data",
+   "label": "File Hash",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_orig",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Not Applicable",
+   "fieldname": "signature_status",
+   "fieldtype": "Select",
+   "label": "Signature Status",
+   "options": "Not Checked\nNot Applicable\nIndeterminate\nInvalid\nValid",
+   "read_only": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "signature_section",
+   "fieldtype": "Section Break",
+   "label": "PDF Signature"
+  },
+  {
+   "default": "Not Applicable",
+   "fieldname": "signature_integrity",
+   "fieldtype": "Select",
+   "label": "CMS Integrity",
+   "options": "Not Checked\nNot Applicable\nPassed\nFailed",
+   "read_only": 1
+  },
+  {
+   "fieldname": "signature_format",
+   "fieldtype": "Data",
+   "label": "Signature Format",
+   "read_only": 1
+  },
+  {
+   "fieldname": "signature_field",
+   "fieldtype": "Data",
+   "label": "Signature Field",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_sig",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "signature_declared_time",
+   "fieldtype": "Data",
+   "label": "Declared Signature Time",
+   "read_only": 1
+  },
+  {
+   "fieldname": "signature_coverage",
+   "fieldtype": "Small Text",
+   "label": "Signed Coverage",
+   "read_only": 1
+  },
+  {
+   "fieldname": "signature_checked_on",
+   "fieldtype": "Datetime",
+   "label": "Signature Checked On",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_sig2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Not Applicable",
+   "fieldname": "signature_certificate_trust",
+   "fieldtype": "Select",
+   "label": "Certificate Trust",
+   "options": "Not Checked\nNot Applicable",
+   "read_only": 1
+  },
+  {
+   "default": "Not Applicable",
+   "fieldname": "signature_revocation",
+   "fieldtype": "Select",
+   "label": "Revocation Check",
+   "options": "Not Checked\nNot Applicable",
+   "read_only": 1
+  },
+  {
+   "default": "Not Applicable",
+   "fieldname": "signature_timestamp_check",
+   "fieldtype": "Select",
+   "label": "Timestamp Check",
+   "options": "Not Checked\nNot Applicable\nPassed\nFailed",
+   "read_only": 1
+  },
+  {
+   "fieldname": "signature_checked_by",
+   "fieldtype": "Link",
+   "label": "Signature Checked By",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "signature_evidence",
+   "fieldtype": "Code",
+   "hidden": 1,
+   "label": "Signature Evidence",
+   "read_only": 1
+  },
+  {
+   "fieldname": "identity_key",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Identity Key",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "items_section",
+   "fieldtype": "Section Break",
+   "label": "Goods"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Customs Declaration Item"
+  },
+  {
+   "fieldname": "charges_section",
+   "fieldtype": "Section Break",
+   "label": "Box 47 Charges"
+  },
+  {
+   "fieldname": "charges",
+   "fieldtype": "Table",
+   "label": "Charges",
+   "options": "Customs Declaration Charge"
+  },
+  {
+   "fieldname": "totals_section",
+   "fieldtype": "Section Break",
+   "label": "Totals"
+  },
+  {
+   "fieldname": "cd_stat_value_total",
+   "fieldtype": "Currency",
+   "label": "Statistical Value",
+   "options": "Company:company:default_currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cd_duty_total",
+   "fieldtype": "Currency",
+   "label": "Duty (020)",
+   "options": "Company:company:default_currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_tot",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cd_vat_total",
+   "fieldtype": "Currency",
+   "label": "VAT (030)",
+   "options": "Company:company:default_currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cd_fees_total",
+   "fieldtype": "Currency",
+   "label": "Total Fees",
+   "options": "Company:company:default_currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Customs Declaration",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-09-13 23:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "ERPNext Moldova Customs",
+ "name": "Customs Declaration",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "Accounts Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "Purchase Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "Accounts User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "Purchase User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
