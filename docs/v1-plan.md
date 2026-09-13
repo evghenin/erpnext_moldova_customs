@@ -1,6 +1,6 @@
 # Moldova Customs V1 — product plan
 
-Source of truth for V1 scope, domain rules, and build slices. Agent working rules (when added) live in [AGENTS.md](../AGENTS.md). Scanned-paper / AI import is [v2-plan.md](v2-plan.md) — same DocTypes, later.
+Source of truth for V1 scope, domain rules, and build slices. Agent working rules: [AGENTS.md](../AGENTS.md). Scanned-paper / AI import: [v2-plan.md](v2-plan.md).
 
 ## Goal
 
@@ -223,7 +223,7 @@ Each slice is separately mergeable and testable on `test.localhost` inside the F
 
 ### Slice 0 — rules file
 
-Write [AGENTS.md](../AGENTS.md) (e-Factura style, short): versions, goal, definitions, invariants above, `cd_*` naming, Docker/`test.localhost`, no banking-style request logs unless you ask later.
+Done: [AGENTS.md](../AGENTS.md).
 
 ### Slice 1 — documents without parser
 

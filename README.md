@@ -2,6 +2,7 @@
 
 Moldova customs declarations integration for ERPNext
 
+- Agent rules: [AGENTS.md](AGENTS.md)
 - V1 product plan (signed SAD PDF, reconciliation, posting): [docs/v1-plan.md](docs/v1-plan.md)
 - V2 product plan (scanned paper + AI, same hub): [docs/v2-plan.md](docs/v2-plan.md)
 
