@@ -6,3 +6,4 @@ tags
 node_modules
 __pycache__
 erpnext_moldova_customs.code-workspace
+examples/

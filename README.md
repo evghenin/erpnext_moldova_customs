@@ -2,6 +2,8 @@
 
 Moldova customs declarations integration for ERPNext
 
+V1 product plan (scope, SAD rules, reconciliation, posting): [docs/v1-plan.md](docs/v1-plan.md)
+
 ### Installation
 
 You can install this app using the [bench](https://github.com/frappe/bench) CLI:
